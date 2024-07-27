@@ -38,6 +38,20 @@ class SiteController extends Controller
         ];
     }
 
+    public function beforeAction($action)
+    {
+
+        $ExceptedActions = [
+            'index',
+        ];
+
+        if (in_array($action->id, $ExceptedActions)) {
+            $this->enableCsrfValidation = false;
+        }
+
+        return parent::beforeAction($action);
+    }
+
     /**
      * {@inheritdoc}
      */
