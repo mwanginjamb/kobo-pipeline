@@ -26,7 +26,7 @@ $config = [
             'enableAutoLogin' => true,
         ],
         'utility' => [
-            'class' => UtilityComponent::class,
+            'class' => app\Library\UtilityComponent::class,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',

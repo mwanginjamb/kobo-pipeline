@@ -1,6 +1,6 @@
 <?php
 
-namespace Library;
+namespace app\Library;
 
 use Yii;
 use yii\base\Component;
